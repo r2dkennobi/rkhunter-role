@@ -1,0 +1,4 @@
+---
+# handlers file for rkhunter-role
+- name: Update rkhunter
+  command: rkhunter --propupd

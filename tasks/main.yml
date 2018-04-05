@@ -1,0 +1,11 @@
+---
+# tasks file for rkhunter-role
+- name: Install rkhunter
+  apt:
+    name: "rkhunter"
+    state: latest
+    update_cache: yes
+  notify:
+    - "Update rkhunter"
+
+- name: Configure rkhunter
